@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="/Users/rishi/Desktop/js/processing-1.4.1.min.js"></script>
+<script type="application/processing" data-processing-target="pjs">
+void setup() {
+  size(200, 200);
+  stroke(0), strokeWeight(2);
+  println('hello web!');
+}
+void draw() {
+  background(100); // clear the frame
+  ellipse(abs(frameCount%400-200), 50, 25, 25);
+}
+</script>
+<canvas id="pjs"> </canvas>
+</body>
+</html>
